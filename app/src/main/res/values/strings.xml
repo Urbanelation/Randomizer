@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Randomizer</string>
+    <string name="insert_save_slot_name">Insert Save Slot Name</string>
 </resources>
