@@ -24,28 +24,32 @@
 
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="35dp"
         android:background="#00B8D4"
         android:backgroundTint="#00BFA5"
         android:text="Save"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="515dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/shareButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="250dp"
-        android:layout_marginBottom="168dp"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="188dp"
         android:background="#00B8D4"
         android:backgroundTint="#00BFA5"
         android:text="Share"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="1.0" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -65,7 +69,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="16dp"
         android:text="How many options do you wish?"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
@@ -77,7 +82,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="112dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +99,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.708" />
 
     <ImageView
         android:id="@+id/imageView"
