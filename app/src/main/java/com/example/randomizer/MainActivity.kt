@@ -7,7 +7,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
 
+
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main) //connects view and activity
@@ -16,9 +18,15 @@ class MainActivity : AppCompatActivity() {
         val resultsTextView = findViewById<TextView>(R.id.resultsTextView)
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
 
+
+
        rollButton.setOnClickListener {
             val rand = Random.nextInt(seekBar.progress) + 1
             resultsTextView.text = rand.toString()
+
+
+
+
 
 /*            //Create a new file that points to the root directory, with the given name:
 
@@ -40,11 +48,10 @@ class MainActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 e.printStackTrace()
             }
+
+
 */
         }
-
-
     }
-
 
 }
