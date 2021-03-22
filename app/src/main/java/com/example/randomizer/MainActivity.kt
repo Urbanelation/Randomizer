@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton = findViewById<Button>(R.id.rollButton)
         val saveButton = findViewById<Button>(R.id.saveButton)
+        val shareButton = findViewById<Button>(R.id.shareButton)
+
         val resultsTextView = findViewById<TextView>(R.id.resultsTextView)
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
 
@@ -70,6 +72,16 @@ class MainActivity : AppCompatActivity() {
             builder.show()
         }
 
+        shareButton.setOnClickListener{
+            val sendIntent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, "I just randomized a $randNumber !")
+                type = "text/plain"
+            }
+
+            val shareIntent = Intent.createChooser(sendIntent, null)
+            startActivity(shareIntent)
+        }
 
 
 
