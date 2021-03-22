@@ -32,6 +32,21 @@
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="515dp" />
 
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="168dp"
+        android:background="#00B8D4"
+        android:backgroundTint="#00BFA5"
+        android:text="Share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <SeekBar
         android:id="@+id/seekBar"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
@@ -92,4 +107,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cat" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
